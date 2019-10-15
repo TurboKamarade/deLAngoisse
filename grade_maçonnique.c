@@ -175,7 +175,7 @@ char	*quatrieme_terme(int n)
 		return ("over 9000");
 	else if (n == 18)
 		return ("de Sealand");
-	return (0);
+	return ("de 42");
 }
 int		main()
 {
