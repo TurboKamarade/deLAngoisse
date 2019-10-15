@@ -20,6 +20,12 @@ char	*premier_terme(int	n)
 		return ("Sublime ");
 	else if (n == 7)
 		return ("Turbo ");
+	else if (n == 8)
+		return ("Etincelant");
+	else if (n == 9)
+		return ("Fils du ");
+	else if (n == 10)
+		return ("Transcendant");
 }
 
 char	*deuxieme_terme(int n)
@@ -46,6 +52,10 @@ char	*deuxieme_terme(int n)
 		return ("Commandeur ");
 	else if (n == 10)
 		return ("Paure ");
+	else if (n == 11)
+		return ("Corbeaux");
+	else if (n == 12)
+		return ("Messager");
 }
 
 char	*troisieme_terme(int n)
@@ -68,6 +78,8 @@ char	*troisieme_terme(int n)
 		return ("général ");
 	else if (n == 8)
 		return ("de la pauretitude ");
+	else if (n == 9)
+		return ("soyeux");
 }
 
 char	*quatrieme_terme(int n)
@@ -86,15 +98,25 @@ char	*quatrieme_terme(int n)
 		return ("symbolique");
 	else if (n == 6)
 		return ("de l\'angoisse");
+	else if (n == 7)
+		return ("du logos");
+	else if (n == 8)
+		return ("de l'espace");
+	else if (n == 10)
+		return ("de la montagne");
+	else if (n == 11)
+		return ("des grottes sous-marines");
+	else if (n == 12)
+		return ("de la calvitie de Cyril");
 }
 int		main()
 {
 	srand(time(0));
 
-	int n1 = rand() % 8;
-	int n2 = rand() % 11;
-	int n3 = rand() % 9;
-	int n4 = rand() % 7;
+	int n1 = rand() % 11;
+	int n2 = rand() % 13;
+	int n3 = rand() % 10;
+	int n4 = rand() % 13;
 
 	printf("%s %s %s %s\n", premier_terme(n1), deuxieme_terme(n2), troisieme_terme(n3), quatrieme_terme(n4));
 	return (0);
