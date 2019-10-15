@@ -28,6 +28,14 @@ char	*premier_terme(int	n)
 		return ("Vaillant");
 	else if (n == 11)
 		return ("Combattant");
+	else if (n == 12)
+		return ("Sombre");
+	else if (n == 13)
+		return ("Noble");
+	else if (n == 14)
+		return ("Incroyable");
+	else if (n == 15)
+		return ("Ultime");
 	return (0);
 }
 
@@ -56,13 +64,39 @@ char	*deuxieme_terme(int n)
 	else if (n == 10)
 		return ("Paure ");
 	else if (n == 11)
-		return ("Corbeaux");
+		return ("Corbeau");
 	else if (n == 12)
 		return ("Messager");
 	else if (n == 13)
 		return ("Leader Supreme");
 	else if (n == 14)
 		return ("Decorateur d'interieur");
+	else if (n == 15)
+		return ("Technicien de surfaces");
+	else if (n == 16)
+		return ("Haut fonctionnaire");
+	else if (n == 17)
+		return ("Pigiste");
+	else if (n == 18)
+		return ("Archiviste");
+	else if (n == 19)
+		return ("Barde");
+	else if (n == 20)
+		return ("Doyen");
+	else if (n == 21)
+		return ("Chasse-coquin");
+	else if (n == 22)
+		return ("Oracle");
+	else if (n == 23)
+		return ("Géologue");
+	else if (n == 24)
+		return ("Bouffon");
+	else if (n == 25)
+		return ("Lord");
+	else if (n == 26)
+		return ("Alchimiste");
+	else if (n == 27)
+		return ("Piscineux");
 	return (0);
 }
 
@@ -88,6 +122,18 @@ char	*troisieme_terme(int n)
 		return ("de la pauretitude ");
 	else if (n == 9)
 		return ("soyeux");
+	else if (n == 10)
+		return ("gadget");
+	else if (n == 11)
+		return ("cosmique");
+	else if (n == 12)
+		return ("ombral");
+	else if (n == 13)
+		return ("sous prozac");
+	else if (n == 14)
+		return ("du potage");
+	else if (n == 15)
+		return ("de la moulinette");
 	return (0);
 }
 
@@ -116,21 +162,29 @@ char	*quatrieme_terme(int n)
 	else if (n == 11)
 		return ("des cavités");
 	else if (n == 12)
-		return ("de la calvitie de Cyril");
+		return ("de la calvitie Cyrilique");
 	else if (n == 13)
 		return ("des profondeurs");
 	else if (n == 14)
 		return ("de l'Univers");
+	else if (n == 15)
+		return ("de la Corèze");
+	else if (n == 16)
+		return ("du cul");
+	else if (n == 17)
+		return ("over 9000");
+	else if (n == 18)
+		return ("de Sealand");
 	return (0);
 }
 int		main()
 {
 	srand(time(0));
 
-	int n1 = rand() % 12;
-	int n2 = rand() % 15;
-	int n3 = rand() % 10;
-	int n4 = rand() % 15;
+	int n1 = rand() % 16;
+	int n2 = rand() % 28;
+	int n3 = rand() % 16;
+	int n4 = rand() % 19;
 
 	printf("%s %s %s %s\n", premier_terme(n1), deuxieme_terme(n2), troisieme_terme(n3), quatrieme_terme(n4));
 	return (0);
