@@ -97,6 +97,8 @@ char	*deuxieme_terme(int n)
 		return ("Alchimiste");
 	else if (n == 27)
 		return ("Piscineux");
+	else if (n == 28)
+		return ("Capitaine");
 	return (0);
 }
 
