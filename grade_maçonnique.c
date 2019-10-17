@@ -5,25 +5,25 @@
 char	*premier_terme(int	n)
 {
 	if (n == 0)
-		return ("Vénérable ");
+		return ("Vénérable");
 	else if (n == 1)
-		return ("Grand ");
+		return ("Grand");
 	else if (n == 2)
-		return ("Respectable ");
+		return ("Respectable");
 	else if (n == 3)
-		return ("Discret ");
+		return ("Discret");
 	else if (n == 4)
-		return ("Majestueux ");
+		return ("Majestueux");
 	else if (n == 5)
-		return ("Éternel ");
+		return ("Éternel");
 	else if (n == 6)
-		return ("Sublime ");
+		return ("Sublime");
 	else if (n == 7)
-		return ("Turbo ");
+		return ("Turbo");
 	else if (n == 8)
 		return ("Étincelant");
 	else if (n == 9)
-		return ("Fils du ");
+		return ("Fils du");
 	else if (n == 10)
 		return ("Vaillant");
 	else if (n == 11)
@@ -36,33 +36,39 @@ char	*premier_terme(int	n)
 		return ("Incroyable");
 	else if (n == 15)
 		return ("Ultime");
+	else if (n == 16)
+		return ("Insolite");
+	else if (n == 17)
+		return ("Fieffé");
+	else if (n == 18)
+		return ("Improbable");
 	return (0);
 }
 
 char	*deuxieme_terme(int n)
 {
 	if (n == 0)
-		return ("Maître parfait ");
+		return ("Maître parfait");
 	else if (n == 1)
-		return ("Chevalier ");
+		return ("Chevalier");
 	else if (n == 2)
-		return ("Prévot ");
+		return ("Prévot");
 	else if (n == 3)
-		return ("Prince ");
+		return ("Prince");
 	else if (n == 4)
-		return ("Chef ");
+		return ("Chef");
 	else if (n == 5)
-		return ("Souverain ");
+		return ("Souverain");
 	else if (n == 6)
-		return ("Pontife ");
+		return ("Pontife");
 	else if (n == 7)
-		return ("Inspecteur ");
+		return ("Inspecteur");
 	else if (n == 8)
-		return ("Inquisiteur ");
+		return ("Inquisiteur");
 	else if (n == 9)
-		return ("Commandeur ");
+		return ("Commandeur");
 	else if (n == 10)
-		return ("Paure ");
+		return ("Paure");
 	else if (n == 11)
 		return ("Corbeau");
 	else if (n == 12)
@@ -99,29 +105,31 @@ char	*deuxieme_terme(int n)
 		return ("Piscineux");
 	else if (n == 28)
 		return ("Capitaine");
+	else if (n == 29)
+		return ("Écossais");
 	return (0);
 }
 
 char	*troisieme_terme(int n)
 {
 	if (n == 0)
-		return ("écossais ");
+		return ("écossais");
 	else if (n == 1)
-		return ("royal ");
+		return ("royal");
 	else if (n == 2)
-		return ("de l\' ordre ");
+		return ("de l\' ordre");
 	else if (n == 3)
-		return ("du temple ");
+		return ("du temple");
 	else if (n == 4)
-		return ("de la croix ");
+		return ("de la croix");
 	else if (n == 5)
-		return ("de la compassion ");
+		return ("de la compassion");
 	else if (n == 6)
-		return ("du tabouret ");
+		return ("du tabouret");
 	else if (n == 7)
-		return ("général ");
+		return ("général");
 	else if (n == 8)
-		return ("de la pauretitude ");
+		return ("de la pauretitude");
 	else if (n == 9)
 		return ("soyeux");
 	else if (n == 10)
@@ -136,6 +144,8 @@ char	*troisieme_terme(int n)
 		return ("du potage");
 	else if (n == 15)
 		return ("de la moulinette");
+	else if (n == 16)
+		return ("modéré");
 	return (0);
 }
 
@@ -170,23 +180,27 @@ char	*quatrieme_terme(int n)
 	else if (n == 14)
 		return ("de l'Univers");
 	else if (n == 15)
-		return ("de la Corèze");
+		return ("de Corèze");
 	else if (n == 16)
 		return ("du cul");
 	else if (n == 17)
 		return ("over 9000");
 	else if (n == 18)
 		return ("de Sealand");
+	else if (n == 19)
+		return ("écossais");
+	else if (n == 20)
+		return ("de Shinzo Abe, premier ministre du Japon");
 	return ("de 42");
 }
 int		main()
 {
 	srand(time(0));
 
-	int n1 = rand() % 16;
-	int n2 = rand() % 28;
-	int n3 = rand() % 16;
-	int n4 = rand() % 19;
+	int n1 = rand() % 19;
+	int n2 = rand() % 30;
+	int n3 = rand() % 17;
+	int n4 = rand() % 21;
 
 	printf("%s %s %s %s\n", premier_terme(n1), deuxieme_terme(n2), troisieme_terme(n3), quatrieme_terme(n4));
 	return (0);
