@@ -42,6 +42,8 @@ char	*premier_terme(int	n)
 		return ("Fieffé");
 	else if (n == 18)
 		return ("Improbable");
+	else if (n == 19)
+		return ("Super");
 	return (0);
 }
 
@@ -107,6 +109,10 @@ char	*deuxieme_terme(int n)
 		return ("Capitaine");
 	else if (n == 29)
 		return ("Écossais");
+	else if (n == 30)
+		return ("Duc");
+	else if (n == 31)
+		return ("Roi");
 	return (0);
 }
 
@@ -146,6 +152,8 @@ char	*troisieme_terme(int n)
 		return ("de la moulinette");
 	else if (n == 16)
 		return ("modéré");
+	else if (n == 17)
+		return ("cosmique");
 	return (0);
 }
 
@@ -170,7 +178,7 @@ char	*quatrieme_terme(int n)
 	else if (n == 8)
 		return ("de l'espace");
 	else if (n == 10)
-		return ("de la montagne");
+		return ("de sous la montagne");
 	else if (n == 11)
 		return ("des cavités");
 	else if (n == 12)
@@ -197,9 +205,9 @@ int		main()
 {
 	srand(time(0));
 
-	int n1 = rand() % 19;
-	int n2 = rand() % 30;
-	int n3 = rand() % 17;
+	int n1 = rand() % 20;
+	int n2 = rand() % 32;
+	int n3 = rand() % 18;
 	int n4 = rand() % 21;
 
 	printf("%s %s %s %s\n", premier_terme(n1), deuxieme_terme(n2), troisieme_terme(n3), quatrieme_terme(n4));
