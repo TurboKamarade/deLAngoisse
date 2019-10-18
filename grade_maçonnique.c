@@ -199,6 +199,10 @@ char	*quatrieme_terme(int n)
 		return ("écossais");
 	else if (n == 20)
 		return ("de Shinzo Abe, premier ministre du Japon");
+	else if (n == 21)
+		return ("de la calvitie Paurique");
+	else if (n == 22)
+		return ("de la mendicité Clémentique");
 	return ("de 42");
 }
 int		main()
@@ -208,7 +212,7 @@ int		main()
 	int n1 = rand() % 20;
 	int n2 = rand() % 32;
 	int n3 = rand() % 18;
-	int n4 = rand() % 21;
+	int n4 = rand() % 23;
 
 	printf("%s %s %s %s\n", premier_terme(n1), deuxieme_terme(n2), troisieme_terme(n3), quatrieme_terme(n4));
 	return (0);
