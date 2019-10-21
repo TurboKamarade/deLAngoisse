@@ -44,6 +44,8 @@ char	*premier_terme(int	n)
 		return ("Improbable");
 	else if (n == 19)
 		return ("Super");
+	else if (n == 20)
+		return ("Divin");
 	return (0);
 }
 
@@ -113,6 +115,18 @@ char	*deuxieme_terme(int n)
 		return ("Duc");
 	else if (n == 31)
 		return ("Roi");
+	else if (n == 32)
+		return ("Devin");
+	else if (n == 33)
+		return ("Duc");
+	else if (n == 34)
+		return ("Baron");
+	else if (n == 35)
+		return ("Marquis");
+	else if (n == 36)
+		return ("Écuyer");
+	else if (n == 37)
+		return ("Vicomte");
 	return (0);
 }
 
@@ -209,8 +223,8 @@ int		main()
 {
 	srand(time(0));
 
-	int n1 = rand() % 20;
-	int n2 = rand() % 32;
+	int n1 = rand() % 21;
+	int n2 = rand() % 38;
 	int n3 = rand() % 18;
 	int n4 = rand() % 23;
 
