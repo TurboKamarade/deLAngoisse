@@ -200,7 +200,7 @@ char	*quatrieme_terme(int n)
 	else if (n == 20)
 		return ("de Shinzo Abe, premier ministre du Japon");
 	else if (n == 21)
-		return ("de la calvitie Paurique");
+		return ("de la calvitie Paurcique");
 	else if (n == 22)
 		return ("de la mendicité Clémentique");
 	return ("de 42");
