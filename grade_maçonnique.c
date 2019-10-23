@@ -46,6 +46,8 @@ char	*premier_terme(int	n)
 		return ("Super");
 	else if (n == 20)
 		return ("Divin");
+	else if (n == 21)
+		return ("Impétueux");
 	return (0);
 }
 
@@ -223,7 +225,7 @@ int		main()
 {
 	srand(time(0));
 
-	int n1 = rand() % 21;
+	int n1 = rand() % 22;
 	int n2 = rand() % 38;
 	int n3 = rand() % 18;
 	int n4 = rand() % 23;
