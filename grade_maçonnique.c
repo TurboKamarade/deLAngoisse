@@ -48,6 +48,8 @@ char	*premier_terme(int	n)
 		return ("Divin");
 	else if (n == 21)
 		return ("Impétueux");
+	else if (n == 22)
+		return ("Charitable");
 	return (0);
 }
 
@@ -219,16 +221,18 @@ char	*quatrieme_terme(int n)
 		return ("de la calvitie Paurcique");
 	else if (n == 22)
 		return ("de la mendicité Clémentique");
+	else if (n == 23)
+		return ("de Saint Eloi");
 	return ("de 42");
 }
 int		main()
 {
 	srand(time(0));
 
-	int n1 = rand() % 22;
+	int n1 = rand() % 23;
 	int n2 = rand() % 38;
 	int n3 = rand() % 18;
-	int n4 = rand() % 23;
+	int n4 = rand() % 24;
 
 	printf("%s %s %s %s\n", premier_terme(n1), deuxieme_terme(n2), troisieme_terme(n3), quatrieme_terme(n4));
 	return (0);
